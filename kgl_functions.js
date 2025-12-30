@@ -61,7 +61,8 @@ console.log("Sales Agent:", checkUserAuthorization("Sales Agent"));
 console.log("Director:", checkUserAuthorization("Director"));
 console.log("Clerk:", checkUserAuthorization("Clerk"));
 
-console.log("\n=== PART B: OBJECT CREATION AND MANIPULATION ===\n");
+//Part B
+console.log("\n PART B \n");
 
 // 4. Function to create sales record
 function createSalesRecord(produceName, tonnage, buyerName, amountPaid) {
@@ -104,7 +105,8 @@ for (let property in salesRecord) {
     console.log(`Property: ${property}, Value: ${salesRecord[property]}`);
 }
 
-console.log("\n=== PART C: LOOP IMPLEMENTATION AND DATA PROCESSING ===\n");
+//Part C
+console.log("\n PART C \n");
 
 // 7. Calculate weekly tonnage statistics using traditional for loop
 let weeklyTonnage = [1200, 1500, 980, 2000, 1100, 1800, 1300];
@@ -168,4 +170,4 @@ for (let i = 0; i < inventory.length; i++) {
     }
 }
 
-console.log("\n=== COURSEWORK 2 COMPLETE ===");
+
