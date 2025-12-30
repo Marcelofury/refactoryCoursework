@@ -1,9 +1,9 @@
-// ============================================================================
-// COURSEWORK 3: KGL ANALYTICS AND REPORTING SYSTEM
-// Focus Areas: Objects, Higher Order Functions, Sets, Maps
-// ============================================================================
 
-console.log("=== PART A: HIGHER ORDER FUNCTIONS - DATA TRANSFORMATION ===\n");
+// COURSEWORK 3: KGL ANALYTICS AND REPORTING SYSTEM
+
+//Part A
+console.log("\n PART A \n");
+
 
 // 1. Create array of procurement record objects
 let procurementRecords = [
@@ -49,7 +49,7 @@ let procurementRecords = [
     },
     {
         id: 1006,
-        dealerName: "John Mukasa",
+        dealerName: "Butera Marcel",
         produceType: "Beans",
         tonnageInKgs: 950,
         costInUgx: 5225000,
@@ -99,7 +99,9 @@ let totalCostProcured = procurementRecords.reduce((accumulator, record) => {
 console.log(`Total tonnage procured across all records: ${totalTonnageProcured} kg`);
 console.log(`Total cost across all records: ${totalCostProcured} UGX`);
 
-console.log("\n=== PART B: SETS FOR UNIQUE DATA MANAGEMENT ===\n");
+//Part B
+console.log("\n PART B \n");
+
 
 // 5. Function to get unique dealers using Set
 function getUniqueDealers(records) {
@@ -141,7 +143,11 @@ console.log(`Director: ${isAuthorizedForProcurement('Director')}`);
 console.log(`Sales Agent: ${isAuthorizedForProcurement('Sales Agent')}`);
 console.log(`Clerk: ${isAuthorizedForProcurement('Clerk')}`);
 
-console.log("\n=== PART C: MAPS FOR PRICE MANAGEMENT ===\n");
+
+//Part C
+console.log("\n PART C \n");
+
+
 
 // 7. Create Map with price list
 let kglPriceList = new Map();
@@ -189,12 +195,3 @@ let highestPrice = Array.from(kglPriceList.values()).reduce((max, currentPrice) 
 
 console.log(`\nHighest price in the Map: ${highestPrice} UGX`);
 
-// Bonus: Find which produce has the highest price
-for (let [produceName, price] of kglPriceList) {
-    if (price === highestPrice) {
-        console.log(`Most expensive produce: ${produceName} at ${price} UGX/kg`);
-    }
-}
-
-console.log("\n=== COURSEWORK 3 COMPLETE ===");
-console.log("\n=== ALL COURSEWORKS COMPLETED SUCCESSFULLY ===");
